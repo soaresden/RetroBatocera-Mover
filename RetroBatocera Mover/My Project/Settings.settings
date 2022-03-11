@@ -3,10 +3,10 @@
   <Profiles />
   <Settings>
     <Setting Name="PathRetrobat" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">Test</Value>
     </Setting>
     <Setting Name="PathBatocera" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">Testt</Value>
     </Setting>
   </Settings>
 </SettingsFile>

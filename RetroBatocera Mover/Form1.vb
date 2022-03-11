@@ -6,15 +6,18 @@ Public Class Form1
         'Initialization
         If My.Settings.PathRetrobat = "" Then
             My.Settings.PathRetrobat = "C:\"
+            My.Settings.Save()
         Else
             rootpathRetrobat.Text = My.Settings.PathRetrobat
         End If
 
         If My.Settings.PathBatocera = "" Then
             My.Settings.PathBatocera = "C:\"
+            My.Settings.Save()
         Else
             rootpathbatocera.Text = My.Settings.PathBatocera
         End If
+
 
         'Fill the Paths
         fillthepaths()
