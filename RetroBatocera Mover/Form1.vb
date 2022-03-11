@@ -115,8 +115,8 @@ Public Class Form1
             End If
         End If
 
-        MessageBox.Show("Moved OK")
         wherearethefiles()
+        MessageBox.Show("Moved OK")
     End Sub
 
     Private Sub FromBatoToRetrobat_Click(sender As Object, e As EventArgs) Handles FromBatoToRetrobat.Click
@@ -199,8 +199,8 @@ Public Class Form1
             End If
         End If
 
-        MessageBox.Show("Moved OK")
         wherearethefiles()
+        MessageBox.Show("Moved OK")
     End Sub
 
     Sub fillthepaths()
