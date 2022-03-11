@@ -1,4 +1,4 @@
-# RetroBatocera-Mover
+# RetroBat-ocera Mover
 
 Simple files mover between Batocera and Retrobat
 
