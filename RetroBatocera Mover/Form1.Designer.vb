@@ -34,11 +34,11 @@ Partial Class Form1
         Me.batoceraroms = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.chkbatoceracollection = New System.Windows.Forms.CheckBox()
-        Me.chkbatocerathemes = New System.Windows.Forms.CheckBox()
-        Me.chkbatoceramusic = New System.Windows.Forms.CheckBox()
-        Me.chkbatocerasaves = New System.Windows.Forms.CheckBox()
-        Me.chkbatoceraroms = New System.Windows.Forms.CheckBox()
+        Me.chkcollectionbatocera = New System.Windows.Forms.CheckBox()
+        Me.chkthemesbatocera = New System.Windows.Forms.CheckBox()
+        Me.chkmusicbatocera = New System.Windows.Forms.CheckBox()
+        Me.chksavesbatocera = New System.Windows.Forms.CheckBox()
+        Me.chkromsbatocera = New System.Windows.Forms.CheckBox()
         Me.Browsebatocera = New System.Windows.Forms.Button()
         Me.rootpathbatocera = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -52,9 +52,9 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.chkcollectionretrobat = New System.Windows.Forms.CheckBox()
-        Me.chkretrobatthemes = New System.Windows.Forms.CheckBox()
-        Me.chkretrobatmusic = New System.Windows.Forms.CheckBox()
-        Me.chkretrobatsaves = New System.Windows.Forms.CheckBox()
+        Me.chkthemesretrobat = New System.Windows.Forms.CheckBox()
+        Me.chkmusicretrobat = New System.Windows.Forms.CheckBox()
+        Me.chksavesretrobat = New System.Windows.Forms.CheckBox()
         Me.chkromsretrobat = New System.Windows.Forms.CheckBox()
         Me.BrowseRetroBat = New System.Windows.Forms.Button()
         Me.rootpathRetrobat = New System.Windows.Forms.TextBox()
@@ -104,11 +104,11 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.batoceraroms)
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Controls.Add(Me.Label5)
-        Me.GroupBox2.Controls.Add(Me.chkbatoceracollection)
-        Me.GroupBox2.Controls.Add(Me.chkbatocerathemes)
-        Me.GroupBox2.Controls.Add(Me.chkbatoceramusic)
-        Me.GroupBox2.Controls.Add(Me.chkbatocerasaves)
-        Me.GroupBox2.Controls.Add(Me.chkbatoceraroms)
+        Me.GroupBox2.Controls.Add(Me.chkcollectionbatocera)
+        Me.GroupBox2.Controls.Add(Me.chkthemesbatocera)
+        Me.GroupBox2.Controls.Add(Me.chkmusicbatocera)
+        Me.GroupBox2.Controls.Add(Me.chksavesbatocera)
+        Me.GroupBox2.Controls.Add(Me.chkromsbatocera)
         Me.GroupBox2.Controls.Add(Me.Browsebatocera)
         Me.GroupBox2.Controls.Add(Me.rootpathbatocera)
         Me.GroupBox2.Controls.Add(Me.Label6)
@@ -193,65 +193,65 @@ Partial Class Form1
         Me.Label5.TabIndex = 24
         Me.Label5.Text = "Library :"
         '
-        'chkbatoceracollection
+        'chkcollectionbatocera
         '
-        Me.chkbatoceracollection.AutoSize = True
-        Me.chkbatoceracollection.Checked = True
-        Me.chkbatoceracollection.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkbatoceracollection.Location = New System.Drawing.Point(16, 193)
-        Me.chkbatoceracollection.Name = "chkbatoceracollection"
-        Me.chkbatoceracollection.Size = New System.Drawing.Size(104, 24)
-        Me.chkbatoceracollection.TabIndex = 23
-        Me.chkbatoceracollection.Text = "Collections"
-        Me.chkbatoceracollection.UseVisualStyleBackColor = True
+        Me.chkcollectionbatocera.AutoSize = True
+        Me.chkcollectionbatocera.Checked = True
+        Me.chkcollectionbatocera.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkcollectionbatocera.Location = New System.Drawing.Point(16, 193)
+        Me.chkcollectionbatocera.Name = "chkcollectionbatocera"
+        Me.chkcollectionbatocera.Size = New System.Drawing.Size(104, 24)
+        Me.chkcollectionbatocera.TabIndex = 23
+        Me.chkcollectionbatocera.Text = "Collections"
+        Me.chkcollectionbatocera.UseVisualStyleBackColor = True
         '
-        'chkbatocerathemes
+        'chkthemesbatocera
         '
-        Me.chkbatocerathemes.AutoSize = True
-        Me.chkbatocerathemes.Checked = True
-        Me.chkbatocerathemes.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkbatocerathemes.Location = New System.Drawing.Point(16, 282)
-        Me.chkbatocerathemes.Name = "chkbatocerathemes"
-        Me.chkbatocerathemes.Size = New System.Drawing.Size(82, 24)
-        Me.chkbatocerathemes.TabIndex = 22
-        Me.chkbatocerathemes.Text = "Themes"
-        Me.chkbatocerathemes.UseVisualStyleBackColor = True
+        Me.chkthemesbatocera.AutoSize = True
+        Me.chkthemesbatocera.Checked = True
+        Me.chkthemesbatocera.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkthemesbatocera.Location = New System.Drawing.Point(16, 282)
+        Me.chkthemesbatocera.Name = "chkthemesbatocera"
+        Me.chkthemesbatocera.Size = New System.Drawing.Size(82, 24)
+        Me.chkthemesbatocera.TabIndex = 22
+        Me.chkthemesbatocera.Text = "Themes"
+        Me.chkthemesbatocera.UseVisualStyleBackColor = True
         '
-        'chkbatoceramusic
+        'chkmusicbatocera
         '
-        Me.chkbatoceramusic.AutoSize = True
-        Me.chkbatoceramusic.Checked = True
-        Me.chkbatoceramusic.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkbatoceramusic.Location = New System.Drawing.Point(16, 310)
-        Me.chkbatoceramusic.Name = "chkbatoceramusic"
-        Me.chkbatoceramusic.Size = New System.Drawing.Size(69, 24)
-        Me.chkbatoceramusic.TabIndex = 21
-        Me.chkbatoceramusic.Text = "Music"
-        Me.chkbatoceramusic.UseVisualStyleBackColor = True
+        Me.chkmusicbatocera.AutoSize = True
+        Me.chkmusicbatocera.Checked = True
+        Me.chkmusicbatocera.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkmusicbatocera.Location = New System.Drawing.Point(16, 310)
+        Me.chkmusicbatocera.Name = "chkmusicbatocera"
+        Me.chkmusicbatocera.Size = New System.Drawing.Size(69, 24)
+        Me.chkmusicbatocera.TabIndex = 21
+        Me.chkmusicbatocera.Text = "Music"
+        Me.chkmusicbatocera.UseVisualStyleBackColor = True
         '
-        'chkbatocerasaves
+        'chksavesbatocera
         '
-        Me.chkbatocerasaves.AutoSize = True
-        Me.chkbatocerasaves.Checked = True
-        Me.chkbatocerasaves.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkbatocerasaves.Location = New System.Drawing.Point(16, 223)
-        Me.chkbatocerasaves.Name = "chkbatocerasaves"
-        Me.chkbatocerasaves.Size = New System.Drawing.Size(68, 24)
-        Me.chkbatocerasaves.TabIndex = 20
-        Me.chkbatocerasaves.Text = "Saves"
-        Me.chkbatocerasaves.UseVisualStyleBackColor = True
+        Me.chksavesbatocera.AutoSize = True
+        Me.chksavesbatocera.Checked = True
+        Me.chksavesbatocera.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chksavesbatocera.Location = New System.Drawing.Point(16, 223)
+        Me.chksavesbatocera.Name = "chksavesbatocera"
+        Me.chksavesbatocera.Size = New System.Drawing.Size(68, 24)
+        Me.chksavesbatocera.TabIndex = 20
+        Me.chksavesbatocera.Text = "Saves"
+        Me.chksavesbatocera.UseVisualStyleBackColor = True
         '
-        'chkbatoceraroms
+        'chkromsbatocera
         '
-        Me.chkbatoceraroms.AutoSize = True
-        Me.chkbatoceraroms.Checked = True
-        Me.chkbatoceraroms.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkbatoceraroms.Location = New System.Drawing.Point(16, 163)
-        Me.chkbatoceraroms.Name = "chkbatoceraroms"
-        Me.chkbatoceraroms.Size = New System.Drawing.Size(68, 24)
-        Me.chkbatoceraroms.TabIndex = 19
-        Me.chkbatoceraroms.Text = "Roms"
-        Me.chkbatoceraroms.UseVisualStyleBackColor = True
+        Me.chkromsbatocera.AutoSize = True
+        Me.chkromsbatocera.Checked = True
+        Me.chkromsbatocera.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkromsbatocera.Location = New System.Drawing.Point(16, 163)
+        Me.chkromsbatocera.Name = "chkromsbatocera"
+        Me.chkromsbatocera.Size = New System.Drawing.Size(68, 24)
+        Me.chkromsbatocera.TabIndex = 19
+        Me.chkromsbatocera.Text = "Roms"
+        Me.chkromsbatocera.UseVisualStyleBackColor = True
         '
         'Browsebatocera
         '
@@ -291,9 +291,9 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.chkcollectionretrobat)
-        Me.GroupBox1.Controls.Add(Me.chkretrobatthemes)
-        Me.GroupBox1.Controls.Add(Me.chkretrobatmusic)
-        Me.GroupBox1.Controls.Add(Me.chkretrobatsaves)
+        Me.GroupBox1.Controls.Add(Me.chkthemesretrobat)
+        Me.GroupBox1.Controls.Add(Me.chkmusicretrobat)
+        Me.GroupBox1.Controls.Add(Me.chksavesretrobat)
         Me.GroupBox1.Controls.Add(Me.chkromsretrobat)
         Me.GroupBox1.Controls.Add(Me.BrowseRetroBat)
         Me.GroupBox1.Controls.Add(Me.rootpathRetrobat)
@@ -391,41 +391,41 @@ Partial Class Form1
         Me.chkcollectionretrobat.Text = "Collections"
         Me.chkcollectionretrobat.UseVisualStyleBackColor = True
         '
-        'chkretrobatthemes
+        'chkthemesretrobat
         '
-        Me.chkretrobatthemes.AutoSize = True
-        Me.chkretrobatthemes.Checked = True
-        Me.chkretrobatthemes.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkretrobatthemes.Location = New System.Drawing.Point(16, 284)
-        Me.chkretrobatthemes.Name = "chkretrobatthemes"
-        Me.chkretrobatthemes.Size = New System.Drawing.Size(82, 24)
-        Me.chkretrobatthemes.TabIndex = 6
-        Me.chkretrobatthemes.Text = "Themes"
-        Me.chkretrobatthemes.UseVisualStyleBackColor = True
+        Me.chkthemesretrobat.AutoSize = True
+        Me.chkthemesretrobat.Checked = True
+        Me.chkthemesretrobat.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkthemesretrobat.Location = New System.Drawing.Point(16, 284)
+        Me.chkthemesretrobat.Name = "chkthemesretrobat"
+        Me.chkthemesretrobat.Size = New System.Drawing.Size(82, 24)
+        Me.chkthemesretrobat.TabIndex = 6
+        Me.chkthemesretrobat.Text = "Themes"
+        Me.chkthemesretrobat.UseVisualStyleBackColor = True
         '
-        'chkretrobatmusic
+        'chkmusicretrobat
         '
-        Me.chkretrobatmusic.AutoSize = True
-        Me.chkretrobatmusic.Checked = True
-        Me.chkretrobatmusic.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkretrobatmusic.Location = New System.Drawing.Point(16, 312)
-        Me.chkretrobatmusic.Name = "chkretrobatmusic"
-        Me.chkretrobatmusic.Size = New System.Drawing.Size(69, 24)
-        Me.chkretrobatmusic.TabIndex = 5
-        Me.chkretrobatmusic.Text = "Music"
-        Me.chkretrobatmusic.UseVisualStyleBackColor = True
+        Me.chkmusicretrobat.AutoSize = True
+        Me.chkmusicretrobat.Checked = True
+        Me.chkmusicretrobat.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkmusicretrobat.Location = New System.Drawing.Point(16, 312)
+        Me.chkmusicretrobat.Name = "chkmusicretrobat"
+        Me.chkmusicretrobat.Size = New System.Drawing.Size(69, 24)
+        Me.chkmusicretrobat.TabIndex = 5
+        Me.chkmusicretrobat.Text = "Music"
+        Me.chkmusicretrobat.UseVisualStyleBackColor = True
         '
-        'chkretrobatsaves
+        'chksavesretrobat
         '
-        Me.chkretrobatsaves.AutoSize = True
-        Me.chkretrobatsaves.Checked = True
-        Me.chkretrobatsaves.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkretrobatsaves.Location = New System.Drawing.Point(16, 225)
-        Me.chkretrobatsaves.Name = "chkretrobatsaves"
-        Me.chkretrobatsaves.Size = New System.Drawing.Size(68, 24)
-        Me.chkretrobatsaves.TabIndex = 4
-        Me.chkretrobatsaves.Text = "Saves"
-        Me.chkretrobatsaves.UseVisualStyleBackColor = True
+        Me.chksavesretrobat.AutoSize = True
+        Me.chksavesretrobat.Checked = True
+        Me.chksavesretrobat.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chksavesretrobat.Location = New System.Drawing.Point(16, 225)
+        Me.chksavesretrobat.Name = "chksavesretrobat"
+        Me.chksavesretrobat.Size = New System.Drawing.Size(68, 24)
+        Me.chksavesretrobat.TabIndex = 4
+        Me.chksavesretrobat.Text = "Saves"
+        Me.chksavesretrobat.UseVisualStyleBackColor = True
         '
         'chkromsretrobat
         '
@@ -545,11 +545,11 @@ Partial Class Form1
     Friend WithEvents batoceraroms As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents chkbatoceracollection As CheckBox
-    Friend WithEvents chkbatocerathemes As CheckBox
-    Friend WithEvents chkbatoceramusic As CheckBox
-    Friend WithEvents chkbatocerasaves As CheckBox
-    Friend WithEvents chkbatoceraroms As CheckBox
+    Friend WithEvents chkcollectionbatocera As CheckBox
+    Friend WithEvents chkthemesbatocera As CheckBox
+    Friend WithEvents chkmusicbatocera As CheckBox
+    Friend WithEvents chksavesbatocera As CheckBox
+    Friend WithEvents chkromsbatocera As CheckBox
     Friend WithEvents Browsebatocera As Button
     Friend WithEvents rootpathbatocera As TextBox
     Friend WithEvents Label6 As Label
@@ -563,9 +563,9 @@ Partial Class Form1
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents chkcollectionretrobat As CheckBox
-    Friend WithEvents chkretrobatthemes As CheckBox
-    Friend WithEvents chkretrobatmusic As CheckBox
-    Friend WithEvents chkretrobatsaves As CheckBox
+    Friend WithEvents chkthemesretrobat As CheckBox
+    Friend WithEvents chkmusicretrobat As CheckBox
+    Friend WithEvents chksavesretrobat As CheckBox
     Friend WithEvents chkromsretrobat As CheckBox
     Friend WithEvents BrowseRetroBat As Button
     Friend WithEvents rootpathRetrobat As TextBox

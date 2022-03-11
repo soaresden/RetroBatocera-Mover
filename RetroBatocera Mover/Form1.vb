@@ -4,12 +4,20 @@ Imports System.Runtime.CompilerServices
 Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Initialization
-        If My.Settings.PathRetrobat <> "" Then rootpathRetrobat.Text = My.Settings.PathRetrobat
-        If My.Settings.PathBatocera <> "" Then rootpathbatocera.Text = My.Settings.PathBatocera
+        If My.Settings.PathRetrobat = "" Then
+            My.Settings.PathRetrobat = "C:\"
+        Else
+            rootpathRetrobat.Text = My.Settings.PathRetrobat
+        End If
+
+        If My.Settings.PathBatocera = "" Then
+            My.Settings.PathBatocera = "C:\"
+        Else
+            rootpathbatocera.Text = My.Settings.PathBatocera
+        End If
 
         'Fill the Paths
         fillthepaths()
-
         wherearethefiles()
     End Sub
 
@@ -31,69 +39,80 @@ Public Class Form1
     End Sub
     Private Sub FromRetrobatToBato_Click(sender As Object, e As EventArgs) Handles FromRetrobatToBato.Click
         'Moving from RetroBat to Batocera
-        If Retrobatroms.BackColor = Color.FromArgb(172, 172, 172) Then
-            MessageBox.Show("RetrobatRoms Folder is empty, can't move it")
-        Else
-            Dim srcfolder = New DirectoryInfo(Retrobatroms.Text)
-            Dim destfolder = New DirectoryInfo(batoceraroms.Text)
-            Moveallitemsto(srcfolder, destfolder)
-            batoceraroms.BackColor = Color.FromArgb(255, 255, 255)
-            batoceraroms.ForeColor = Color.FromArgb(0, 128, 0)
+        If chkromsretrobat.Checked = True Then
+            If Retrobatroms.BackColor = Color.FromArgb(172, 172, 172) Then
+                MessageBox.Show("RetrobatRoms Folder is empty, can't move it")
+            Else
+                Dim srcfolder = New DirectoryInfo(Retrobatroms.Text)
+                Dim destfolder = New DirectoryInfo(batoceraroms.Text)
+                Moveallitemsto(srcfolder, destfolder)
+                batoceraroms.BackColor = Color.FromArgb(255, 255, 255)
+                batoceraroms.ForeColor = Color.FromArgb(0, 128, 0)
 
-            Retrobatroms.BackColor = Color.FromArgb(172, 172, 172)
-            Retrobatroms.ForeColor = Color.FromArgb(255, 255, 255)
+                Retrobatroms.BackColor = Color.FromArgb(172, 172, 172)
+                Retrobatroms.ForeColor = Color.FromArgb(255, 255, 255)
+            End If
         End If
 
-        If retrobatcollection.BackColor = Color.FromArgb(172, 172, 172) Then
-            MessageBox.Show("RetrobatCollection Folder is empty, can't move it")
-        Else
-            Dim srcfolder = New DirectoryInfo(retrobatcollection.Text)
-            Dim destfolder = New DirectoryInfo(batoceracollection.Text)
-            Moveallitemsto(srcfolder, destfolder)
-            batoceracollection.BackColor = Color.FromArgb(255, 255, 255)
-            batoceracollection.ForeColor = Color.FromArgb(0, 128, 0)
+        If chkcollectionretrobat.Checked = True Then
+            If retrobatcollection.BackColor = Color.FromArgb(172, 172, 172) Then
+                MessageBox.Show("RetrobatCollection Folder is empty, can't move it")
+            Else
+                Dim srcfolder = New DirectoryInfo(retrobatcollection.Text)
+                Dim destfolder = New DirectoryInfo(batoceracollection.Text)
+                Moveallitemsto(srcfolder, destfolder)
+                batoceracollection.BackColor = Color.FromArgb(255, 255, 255)
+                batoceracollection.ForeColor = Color.FromArgb(0, 128, 0)
 
-            retrobatcollection.BackColor = Color.FromArgb(172, 172, 172)
-            retrobatcollection.ForeColor = Color.FromArgb(255, 255, 255)
+                retrobatcollection.BackColor = Color.FromArgb(172, 172, 172)
+                retrobatcollection.ForeColor = Color.FromArgb(255, 255, 255)
+            End If
         End If
 
-        If retrobatsaves.BackColor = Color.FromArgb(172, 172, 172) Then
-            MessageBox.Show("RetrobatSaves Folder is empty, can't move it")
-        Else
-            Dim srcfolder = New DirectoryInfo(retrobatsaves.Text)
-            Dim destfolder = New DirectoryInfo(batocerasaves.Text)
-            Moveallitemsto(srcfolder, destfolder)
-            batocerasaves.BackColor = Color.FromArgb(255, 255, 255)
-            batocerasaves.ForeColor = Color.FromArgb(0, 128, 0)
 
-            retrobatsaves.BackColor = Color.FromArgb(172, 172, 172)
-            retrobatsaves.ForeColor = Color.FromArgb(255, 255, 255)
+        If chksavesretrobat.Checked = True Then
+            If retrobatsaves.BackColor = Color.FromArgb(172, 172, 172) Then
+                MessageBox.Show("RetrobatSaves Folder is empty, can't move it")
+            Else
+                Dim srcfolder = New DirectoryInfo(retrobatsaves.Text)
+                Dim destfolder = New DirectoryInfo(batocerasaves.Text)
+                Moveallitemsto(srcfolder, destfolder)
+                batocerasaves.BackColor = Color.FromArgb(255, 255, 255)
+                batocerasaves.ForeColor = Color.FromArgb(0, 128, 0)
+
+                retrobatsaves.BackColor = Color.FromArgb(172, 172, 172)
+                retrobatsaves.ForeColor = Color.FromArgb(255, 255, 255)
+            End If
         End If
 
-        If retrobatthemes.BackColor = Color.FromArgb(172, 172, 172) Then
-            MessageBox.Show("BatoceraThemes Folder is empty, can't move it")
-        Else
-            Dim srcfolder = New DirectoryInfo(retrobatthemes.Text)
-            Dim destfolder = New DirectoryInfo(batocerathemes.Text)
-            Moveallitemsto(srcfolder, destfolder)
-            batocerathemes.BackColor = Color.FromArgb(255, 255, 255)
-            batocerathemes.ForeColor = Color.FromArgb(0, 128, 0)
+        If chkthemesretrobat.Checked = True Then
+            If retrobatthemes.BackColor = Color.FromArgb(172, 172, 172) Then
+                MessageBox.Show("BatoceraThemes Folder is empty, can't move it")
+            Else
+                Dim srcfolder = New DirectoryInfo(retrobatthemes.Text)
+                Dim destfolder = New DirectoryInfo(batocerathemes.Text)
+                Moveallitemsto(srcfolder, destfolder)
+                batocerathemes.BackColor = Color.FromArgb(255, 255, 255)
+                batocerathemes.ForeColor = Color.FromArgb(0, 128, 0)
 
-            batocerathemes.BackColor = Color.FromArgb(172, 172, 172)
-            batocerathemes.ForeColor = Color.FromArgb(255, 255, 255)
+                batocerathemes.BackColor = Color.FromArgb(172, 172, 172)
+                batocerathemes.ForeColor = Color.FromArgb(255, 255, 255)
+            End If
         End If
 
-        If retrobatmusic.BackColor = Color.FromArgb(172, 172, 172) Then
-            MessageBox.Show("RetrobatMusic Folder is empty, can't move it")
-        Else
-            Dim srcfolder = New DirectoryInfo(retrobatmusic.Text)
-            Dim destfolder = New DirectoryInfo(batoceramusic.Text)
-            Moveallitemsto(srcfolder, destfolder)
-            batoceramusic.BackColor = Color.FromArgb(255, 255, 255)
-            batoceramusic.ForeColor = Color.FromArgb(0, 128, 0)
+        If chkmusicretrobat.Checked = True Then
+            If retrobatmusic.BackColor = Color.FromArgb(172, 172, 172) Then
+                MessageBox.Show("RetrobatMusic Folder is empty, can't move it")
+            Else
+                Dim srcfolder = New DirectoryInfo(retrobatmusic.Text)
+                Dim destfolder = New DirectoryInfo(batoceramusic.Text)
+                Moveallitemsto(srcfolder, destfolder)
+                batoceramusic.BackColor = Color.FromArgb(255, 255, 255)
+                batoceramusic.ForeColor = Color.FromArgb(0, 128, 0)
 
-            retrobatmusic.BackColor = Color.FromArgb(172, 172, 172)
-            retrobatmusic.ForeColor = Color.FromArgb(255, 255, 255)
+                retrobatmusic.BackColor = Color.FromArgb(172, 172, 172)
+                retrobatmusic.ForeColor = Color.FromArgb(255, 255, 255)
+            End If
         End If
 
         MessageBox.Show("Moved OK")
@@ -102,69 +121,82 @@ Public Class Form1
 
     Private Sub FromBatoToRetrobat_Click(sender As Object, e As EventArgs) Handles FromBatoToRetrobat.Click
         'Moving from Batocera to RetroBat
-        If batoceraroms.BackColor = Color.FromArgb(172, 172, 172) Then
-            MessageBox.Show("BatoceraRoms Folder is empty, can't move it")
-        Else
-            Dim srcfolder = New DirectoryInfo(batoceraroms.Text)
-            Dim destfolder = New DirectoryInfo(retrobatroms.Text)
-            Moveallitemsto(srcfolder, destfolder)
-            Retrobatroms.BackColor = Color.FromArgb(255, 255, 255)
-            Retrobatroms.ForeColor = Color.FromArgb(0, 128, 0)
+        If chkromsbatocera.Checked = True Then
+            If batoceraroms.BackColor = Color.FromArgb(172, 172, 172) Then
+                MessageBox.Show("BatoceraRoms Folder is empty, can't move it")
 
-            batoceraroms.BackColor = Color.FromArgb(172, 172, 172)
-            batoceraroms.ForeColor = Color.FromArgb(255, 255, 255)
+            Else
+                Dim srcfolder = New DirectoryInfo(batoceraroms.Text)
+                Dim destfolder = New DirectoryInfo(retrobatroms.Text)
+                Moveallitemsto(srcfolder, destfolder)
+                Retrobatroms.BackColor = Color.FromArgb(255, 255, 255)
+                Retrobatroms.ForeColor = Color.FromArgb(0, 128, 0)
+
+                batoceraroms.BackColor = Color.FromArgb(172, 172, 172)
+                batoceraroms.ForeColor = Color.FromArgb(255, 255, 255)
+            End If
         End If
 
-        If batoceracollection.BackColor = Color.FromArgb(172, 172, 172) Then
-            MessageBox.Show("BatoceraCollection Folder is empty, can't move it")
-        Else
-            Dim srcfolder = New DirectoryInfo(batoceracollection.Text)
-            Dim destfolder = New DirectoryInfo(retrobatcollection.Text)
-            Moveallitemsto(srcfolder, destfolder)
-            retrobatcollection.BackColor = Color.FromArgb(255, 255, 255)
-            retrobatcollection.ForeColor = Color.FromArgb(0, 128, 0)
+        If chkcollectionbatocera.Checked = True Then
+            If batoceracollection.BackColor = Color.FromArgb(172, 172, 172) Then
+                MessageBox.Show("BatoceraCollection Folder is empty, can't move it")
+            Else
+                Dim srcfolder = New DirectoryInfo(batoceracollection.Text)
+                Dim destfolder = New DirectoryInfo(retrobatcollection.Text)
+                Moveallitemsto(srcfolder, destfolder)
+                retrobatcollection.BackColor = Color.FromArgb(255, 255, 255)
+                retrobatcollection.ForeColor = Color.FromArgb(0, 128, 0)
 
-            batoceracollection.BackColor = Color.FromArgb(172, 172, 172)
-            batoceracollection.ForeColor = Color.FromArgb(255, 255, 255)
+                batoceracollection.BackColor = Color.FromArgb(172, 172, 172)
+                batoceracollection.ForeColor = Color.FromArgb(255, 255, 255)
+            End If
         End If
 
-        If batocerasaves.BackColor = Color.FromArgb(172, 172, 172) Then
-            MessageBox.Show("BatoceraSaves Folder is empty, can't move it")
-        Else
-            Dim srcfolder = New DirectoryInfo(batocerasaves.Text)
-            Dim destfolder = New DirectoryInfo(retrobatsaves.Text)
-            Moveallitemsto(srcfolder, destfolder)
-            retrobatsaves.BackColor = Color.FromArgb(255, 255, 255)
-            retrobatsaves.ForeColor = Color.FromArgb(0, 128, 0)
 
-            batocerasaves.BackColor = Color.FromArgb(172, 172, 172)
-            batocerasaves.ForeColor = Color.FromArgb(255, 255, 255)
+        If chksavesbatocera.Checked = True Then
+            If batocerasaves.BackColor = Color.FromArgb(172, 172, 172) Then
+                MessageBox.Show("BatoceraSaves Folder is empty, can't move it")
+            Else
+                Dim srcfolder = New DirectoryInfo(batocerasaves.Text)
+                Dim destfolder = New DirectoryInfo(retrobatsaves.Text)
+                Moveallitemsto(srcfolder, destfolder)
+                retrobatsaves.BackColor = Color.FromArgb(255, 255, 255)
+                retrobatsaves.ForeColor = Color.FromArgb(0, 128, 0)
+
+                batocerasaves.BackColor = Color.FromArgb(172, 172, 172)
+                batocerasaves.ForeColor = Color.FromArgb(255, 255, 255)
+            End If
         End If
 
-        If batocerathemes.BackColor = Color.FromArgb(172, 172, 172) Then
-            MessageBox.Show("BatoceraThemes Folder is empty, can't move it")
-        Else
-            Dim srcfolder = New DirectoryInfo(batocerathemes.Text)
-            Dim destfolder = New DirectoryInfo(retrobatthemes.Text)
-            Moveallitemsto(srcfolder, destfolder)
-            retrobatthemes.BackColor = Color.FromArgb(255, 255, 255)
-            retrobatthemes.ForeColor = Color.FromArgb(0, 128, 0)
+        If chkthemesbatocera.Checked = True Then
+            If batocerathemes.BackColor = Color.FromArgb(172, 172, 172) Then
+                MessageBox.Show("BatoceraThemes Folder is empty, can't move it")
+            Else
+                Dim srcfolder = New DirectoryInfo(batocerathemes.Text)
+                Dim destfolder = New DirectoryInfo(retrobatthemes.Text)
+                Moveallitemsto(srcfolder, destfolder)
+                retrobatthemes.BackColor = Color.FromArgb(255, 255, 255)
+                retrobatthemes.ForeColor = Color.FromArgb(0, 128, 0)
 
-            batocerathemes.BackColor = Color.FromArgb(172, 172, 172)
-            batocerathemes.ForeColor = Color.FromArgb(255, 255, 255)
+                batocerathemes.BackColor = Color.FromArgb(172, 172, 172)
+                batocerathemes.ForeColor = Color.FromArgb(255, 255, 255)
+            End If
         End If
 
-        If batoceramusic.BackColor = Color.FromArgb(172, 172, 172) Then
-            MessageBox.Show("BatoceraMusic Folder is empty, can't move it")
-        Else
-            Dim srcfolder = New DirectoryInfo(batoceramusic.Text)
-            Dim destfolder = New DirectoryInfo(retrobatmusic.Text)
-            Moveallitemsto(srcfolder, destfolder)
-            retrobatmusic.BackColor = Color.FromArgb(255, 255, 255)
-            retrobatmusic.ForeColor = Color.FromArgb(0, 128, 0)
 
-            batoceramusic.BackColor = Color.FromArgb(172, 172, 172)
-            batoceramusic.ForeColor = Color.FromArgb(255, 255, 255)
+        If chkmusicbatocera.Checked = True Then
+            If batoceramusic.BackColor = Color.FromArgb(172, 172, 172) Then
+                MessageBox.Show("BatoceraMusic Folder is empty, can't move it")
+            Else
+                Dim srcfolder = New DirectoryInfo(batoceramusic.Text)
+                Dim destfolder = New DirectoryInfo(retrobatmusic.Text)
+                Moveallitemsto(srcfolder, destfolder)
+                retrobatmusic.BackColor = Color.FromArgb(255, 255, 255)
+                retrobatmusic.ForeColor = Color.FromArgb(0, 128, 0)
+
+                batoceramusic.BackColor = Color.FromArgb(172, 172, 172)
+                batoceramusic.ForeColor = Color.FromArgb(255, 255, 255)
+            End If
         End If
 
         MessageBox.Show("Moved OK")
