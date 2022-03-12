@@ -538,11 +538,11 @@ Partial Class Form1
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 28.2!, System.Drawing.FontStyle.Bold)
         Me.Label7.ForeColor = System.Drawing.Color.GreenYellow
-        Me.Label7.Location = New System.Drawing.Point(116, 0)
+        Me.Label7.Location = New System.Drawing.Point(105, -7)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(630, 65)
+        Me.Label7.Size = New System.Drawing.Size(676, 65)
         Me.Label7.TabIndex = 0
-        Me.Label7.Text = "RETROBAT-OCERA MOVER"
+        Me.Label7.Text = "RETRO BAT-O'-CERA MOVER"
         '
         'Form1
         '
