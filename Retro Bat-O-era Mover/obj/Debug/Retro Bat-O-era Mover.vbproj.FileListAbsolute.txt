@@ -10,3 +10,15 @@ C:\Users\soare\source\repos\Retro Bat-O-era Mover\Retro Bat-O-era Mover\obj\Debu
 C:\Users\soare\source\repos\Retro Bat-O-era Mover\Retro Bat-O-era Mover\obj\Debug\Retro Bat-O-era Mover.exe
 C:\Users\soare\source\repos\Retro Bat-O-era Mover\Retro Bat-O-era Mover\obj\Debug\Retro Bat-O-era Mover.xml
 C:\Users\soare\source\repos\Retro Bat-O-era Mover\Retro Bat-O-era Mover\obj\Debug\Retro Bat-O-era Mover.pdb
+C:\Users\soare\Source\Repos\soaresden\RetroBatocera-Mover\Retro Bat-O-era Mover\bin\Debug\Retro Bat-O-era Mover.exe.config
+C:\Users\soare\Source\Repos\soaresden\RetroBatocera-Mover\Retro Bat-O-era Mover\bin\Debug\Retro Bat-O-era Mover.exe
+C:\Users\soare\Source\Repos\soaresden\RetroBatocera-Mover\Retro Bat-O-era Mover\bin\Debug\Retro Bat-O-era Mover.pdb
+C:\Users\soare\Source\Repos\soaresden\RetroBatocera-Mover\Retro Bat-O-era Mover\bin\Debug\Retro Bat-O-era Mover.xml
+C:\Users\soare\Source\Repos\soaresden\RetroBatocera-Mover\Retro Bat-O-era Mover\obj\Debug\Retro Bat-O-era Mover.vbproj.AssemblyReference.cache
+C:\Users\soare\Source\Repos\soaresden\RetroBatocera-Mover\Retro Bat-O-era Mover\obj\Debug\Retro_Bat_O_era_Mover.Form1.resources
+C:\Users\soare\Source\Repos\soaresden\RetroBatocera-Mover\Retro Bat-O-era Mover\obj\Debug\Retro_Bat_O_era_Mover.Resources.resources
+C:\Users\soare\Source\Repos\soaresden\RetroBatocera-Mover\Retro Bat-O-era Mover\obj\Debug\Retro Bat-O-era Mover.vbproj.GenerateResource.cache
+C:\Users\soare\Source\Repos\soaresden\RetroBatocera-Mover\Retro Bat-O-era Mover\obj\Debug\Retro Bat-O-era Mover.vbproj.CoreCompileInputs.cache
+C:\Users\soare\Source\Repos\soaresden\RetroBatocera-Mover\Retro Bat-O-era Mover\obj\Debug\Retro Bat-O-era Mover.exe
+C:\Users\soare\Source\Repos\soaresden\RetroBatocera-Mover\Retro Bat-O-era Mover\obj\Debug\Retro Bat-O-era Mover.xml
+C:\Users\soare\Source\Repos\soaresden\RetroBatocera-Mover\Retro Bat-O-era Mover\obj\Debug\Retro Bat-O-era Mover.pdb

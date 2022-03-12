@@ -6,9 +6,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{AB14F153-F5AD-4155-B0F1-EBE9E285C038}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Retro_Bat_O_era_Mover.My.MyApplication</StartupObject>
-    <RootNamespace>Retro_Bat_O_era_Mover</RootNamespace>
-    <AssemblyName>Retro Bat-O-era Mover</AssemblyName>
+    <StartupObject>Retro_Bat_O_Cera_Mover.My.MyApplication</StartupObject>
+    <RootNamespace>Retro_Bat_O_Cera_Mover</RootNamespace>
+    <AssemblyName>Retro Bat-O-Cera Mover</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Retro Bat-O-era Mover.xml</DocumentationFile>
+    <DocumentationFile>Retro Bat-O-Cera Mover.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Retro Bat-O-era Mover.xml</DocumentationFile>
+    <DocumentationFile>Retro Bat-O-Cera Mover.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -46,6 +46,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Sans titre 4.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -84,6 +87,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -124,6 +128,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Image.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sans titre 4.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
